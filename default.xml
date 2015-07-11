@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r4" />
+           revision="refs/tags/android-5.1.1_r6" />
 
   <remote  name="github"
            fetch=".."
@@ -17,7 +17,7 @@
   <default revision="refs/heads/cm-12.1"
            remote="github"
            sync-c="true"
-           sync-j="16" />
+           sync-j="32" />
 
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -590,15 +590,15 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/cm" name="aphisitworachorch/android_vendor_cm" />
+  <project path="vendor/cm" name="CyaogenMod/android_vendor_cm" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
   <project path="device/sony/huashan" name="aphisitworachorch/android_device_sony_huashan" remote="github" revision="cm-12.1" />
-  <project name="aphisitworachorch/android_device_sony_msm8960-common" path="device/sony/msm8960-common" remote="github" revision="cm-12.1" />
+  <project name="Mrcl1450/android_device_sony_msm8960-common" path="device/sony/msm8960-common" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_device_sony_common" path="device/sony/common" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_device_sony_qcom-common" path="device/sony/qcom-common" remote="github" revision="cm-12.0" />
   <project path="kernel/sony/msm8x60" name="aphisitworachorch/android_kernel_sony_msm8x60" remote="github" revision="cm-12.1" />
-  <project name="aphisitworachorch/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-12.1" />
-  <project name="aphisitworachorch/vendor_sony" path="vendor/sony" remote="github" revision="L51" />
+  <project name="Mrcl1450/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-12.1" />
+  <project name="Mrcl1450/proprietary_vendor_sony" path="vendor/sony" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" revision="cm-12.1" />
 </manifest>
